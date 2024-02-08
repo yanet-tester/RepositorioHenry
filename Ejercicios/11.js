@@ -1,10 +1,16 @@
-function esMayorDeEdad(fechaNacimiento) {
-    // La función recibe un argumento "fechaNacimiento" correspondiente a la fecha
-    // de nacimiento de una persona.
-    // Determina si esta persona es mayor de edad (tiene 18 años o más).
-    // Devuelve true si lo es, caso contrario, retorna false.
-    // PISTA: Investiga el método getFullYear() de la clase Date para obtener el año actual.
-    // Tu código:
-  }
+function esMayorDeEdad(fechaNacimiento) {  
+        // Obtener la fecha actual
+        const fechaActual = new Date();
+        // Obtener el año actual
+        const añoActual = fechaActual.getFullYear();
+        // Obtener el año de nacimiento de la fecha de nacimiento
+        const añoNacimiento = new Date(fechaNacimiento).getFullYear();
+        // Calcular la edad restando el año actual menos el año de nacimiento
+        const edad = añoActual - añoNacimiento;
+        // Verificar si la edad es mayor o igual a 18
+        return edad >= 18;
+    }
+    console.log(esMayorDeEdad('2023-01-01')); //Verifica si la persona nacida en 2023 es mayor de edad
+  
   
   module.exports = esMayorDeEdad;
