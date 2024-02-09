@@ -1,8 +1,6 @@
 function deEuroAdolar(euro) {
-    // Debes calcular el valor recibido como argumento pasándolo a dólares.
-    // Supongamos que 1 euro equivale a 1.20 dólares.
-    // Tu código:
+  return (euro * 1.08 + " " + "Dollars");
   }
-  
+  console.log(deEuroAdolar(500));
   module.exports = deEuroAdolar;
   
