@@ -1,7 +1,13 @@
 function menosQueNoventa(num) {
-    // Retorna true si el argumento "num" es menor que noventa.
-    // De lo contrario, retorna false.
-    // Tu código:
+  return num < 90;
+    
   }
   
+  let num = 80;
+
+if (menosQueNoventa(num)) {
+  console.log("El número es menor que noventa.");
+} else {
+  console.log("El número es mayor o igual a noventa.");
+}
   module.exports = menosQueNoventa;

@@ -1,10 +1,22 @@
-function esPositivo(num) {
-    // La función recibe un entero. Devuelve como resultado un string que indica si el número
-    // es positivo o negativo.
-    // Si el número es positivo ---> "Es positivo".
-    // Si el número es negativo ---> "Es negativo".
-    // Si el número es 0, devuelve false.
-    // Tu código:
+function esPositivo(numPosi) {
+  
+  // Verifica si el número es positivo, negativo o cero
+  if (numPosi > 0) {
+    return "Es positivo";
+  } else if (numPosi < 0) {
+    return "Es negativo";
+  } else {
+    return false;
   }
+
+  
+}
+// Llamadas a la función con diferentes números
+console.log(esPositivo(5)); // Salida esperada: "Es positivo"
+console.log(esPositivo(-3)); // Salida esperada: "Es negativo"
+console.log(esPositivo(0)); // Salida esperada: false
+
+
+
   
   module.exports = esPositivo;

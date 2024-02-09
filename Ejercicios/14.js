@@ -1,8 +1,14 @@
 function tienenMismaLongitud(str1, str2) {
-    // La función recibe dos argumentos "str1" e "str2" que son strings.
-    // Retorna true si los dos strings tienen la misma longitud.
-    // De lo contrario, retorna false.
-    // Tu código:
+    return str1.length === str2.length;
   }
   
+  // Verificación y llamada a la función
+let str1 = "Hola";
+let str2 = "Adiós";
+
+if (tienenMismaLongitud(str1, str2)) {
+  console.log("Los strings tienen la misma longitud.");
+} else {
+  console.log("Los strings tienen longitudes diferentes.");
+}
   module.exports = tienenMismaLongitud;
